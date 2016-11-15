@@ -46,7 +46,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
               <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-              <folding />
+              <folding>
+                <marker date="1479219710170" expanded="true" signature="300:583" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -373,12 +375,12 @@
       <option name="presentableId" value="Default" />
       <updated>1479196556040</updated>
       <workItem from="1479196557334" duration="200000" />
-      <workItem from="1479196811851" duration="28059000" />
+      <workItem from="1479196811851" duration="28952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28259000" />
+    <option name="totallyTimeSpent" value="29152000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,8 +461,7 @@
         <state relative-caret-position="172">
           <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#736#742#0#HTML" expanded="true" />
+            <element signature="e#736#742#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -501,7 +502,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding />
+          <folding>
+            <marker date="1479219710170" expanded="true" signature="300:583" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
