@@ -5,8 +5,10 @@ require('dotenv').config();
 const express      = require('express');
     app            = express();
     port           = process.env.PORT||8080;
+    dbHost         = process.env.DB_URI;
     expressLayouts = require('express-ejs-layouts');
     mongoose       = require('mongoose');
+    bodyParser     = require('body-parser');
 
 
 // configure our application =====================
@@ -17,14 +19,18 @@ app.use(express.static(__dirname+'/public'));
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 
+// connect to our DB
+mongoose.connect(dbHost);
+
+// use boy-parser to grab info from a form
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // set the routes =====================
 app.use(require('./app/routes'));
 
-// connect to our DB
-mongoose.connect(process.env.DB_URI);
-
-//noinspection BadExpressionStatementJS =====================
+//noinspection BadExpressionStatementJS
+// start our server =====================
 app.listen(port, () => {
-    console.log(`Server started on http://localhost:${port}`)
+    console.log(`Server started on ${dbHost}:${port}`)
 });
 

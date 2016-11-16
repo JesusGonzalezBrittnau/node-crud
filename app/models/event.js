@@ -15,6 +15,7 @@ const eventSchema = new Schema ({
 // middleware-----
 // make sure that the slug is created from the name
 eventSchema.pre('save', function (next){
+//    this.slug = this.name;
     this.slug = slugify(this.name);
     next();
 });
@@ -26,6 +27,7 @@ const eventModel = mongoose.model('Event', eventSchema)
 module.exports = eventModel;
 
 function slugify(text){
+    console.log('Text: ' + text )
     return text.toString().toLowerCase()
         .replace(/\s+/g, '-')           // Replace spaces with -
         .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
