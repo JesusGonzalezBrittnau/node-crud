@@ -146,7 +146,7 @@ module.exports = {
             req.flash('errors', errors.map(err => err.msg));
             return res.redirect(`/events/${req.params.slug}/edit`);
         }
-        // finding the curren event
+        // finding the current event
         Event.findOne({ slug: req.params.slug }, (err, event) => {
 
             // updating that event
