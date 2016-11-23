@@ -11,6 +11,7 @@
     <tr>
         <th>Event Name</th>
         <th>Description</th>
+        <th>Best Player/Athlet</th>
         <th></th>
     </tr>
     </thead>
@@ -19,6 +20,7 @@
             <tr>
                 <td><%= event.name %></td>
                 <td><%= event.description %></td>
+                <td><%= event.bestPlayer %></td>
                 <td>
                     <a href="/events/<%= event.slug %>" class="btn btn-sm btn-primary">View</a>
                     <a href="/events/<%= event.slug %>/edit" class="btn btn-sm btn-primary">Edit</a>
