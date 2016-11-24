@@ -52,6 +52,6 @@ app.use(require('./app/routes'));
 //noinspection BadExpressionStatementJS
 // start our server =====================
 app.listen(port, () => {
-    console.log(`Server started on ${dbHost}:${port}`)
+    console.log(`Server started on Database=${dbHost} on localhost:${port}`)
 });
 

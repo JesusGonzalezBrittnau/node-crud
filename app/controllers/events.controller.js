@@ -73,12 +73,8 @@ module.exports = {
         });
     // set a successful flash message
     req.flash('success', 'Database successfully restored!');
-
-    res.render('pages/events', {
-            events: events,
-            success: req.flash('success')
-        });
-    }
+    res.redirect('/events');
+}
 
 /**
  * Show the create form
@@ -156,7 +152,7 @@ module.exports = {
 
             // updating that event
             event.name = req.body.name;
-            event.descriptiondescription = req.body.description;
+            event.description = req.body.description;
             event.bestPlayer = req.body.bestPlayer;
             event.save((err) => {
                 if (err) throw err;
