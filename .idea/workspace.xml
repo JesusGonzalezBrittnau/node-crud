@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc003773-bdfc-4873-bd0f-1fbcebe98b78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.ejs" afterPath="$PROJECT_DIR$/views/layout.ejs" />
     </list>
     <ignored path="node-crud.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="layout.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layout.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="63">
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/main.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -49,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/events.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1760">
-              <caret line="80" column="3" lean-forward="true" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
+              <caret line="80" column="3" lean-forward="false" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="1" column="70" lean-forward="false" selection-start-line="1" selection-start-column="70" selection-end-line="1" selection-end-column="70" />
+              <caret line="1" column="71" lean-forward="true" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/.myClipboard">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="70" />
+              <caret line="0" column="71" lean-forward="true" selection-start-line="0" selection-start-column="71" selection-end-line="0" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -142,7 +142,6 @@
         <option value="$PROJECT_DIR$/.myClipboard" />
         <option value="$PROJECT_DIR$/app/models/event.js" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/views/layout.ejs" />
         <option value="$PROJECT_DIR$/views/pages/edit.ejs" />
         <option value="$PROJECT_DIR$/views/pages/events.ejs" />
         <option value="$PROJECT_DIR$/views/pages/create.ejs" />
@@ -150,6 +149,7 @@
         <option value="$PROJECT_DIR$/app/controllers/events.controller.js" />
         <option value="$PROJECT_DIR$/views/pages/single.ejs" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/views/layout.ejs" />
       </list>
     </option>
   </component>
@@ -299,8 +299,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -421,12 +421,13 @@
       <workItem from="1479820338731" duration="4550000" />
       <workItem from="1479936900147" duration="3928000" />
       <workItem from="1479993280202" duration="1131000" />
-      <workItem from="1480009085783" duration="35000" />
+      <workItem from="1480009085783" duration="716000" />
+      <workItem from="1480452863084" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16462000" />
+    <option name="totallyTimeSpent" value="17166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -570,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,22 +824,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/events.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
-          <caret line="80" column="3" lean-forward="true" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="80" column="3" lean-forward="false" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -852,7 +838,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/main.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -897,18 +883,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.myClipboard">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="70" />
+        <state relative-caret-position="22">
+          <caret line="1" column="71" lean-forward="true" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/.myClipboard">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="70" lean-forward="false" selection-start-line="1" selection-start-column="70" selection-end-line="1" selection-end-column="70" />
+        <state relative-caret-position="0">
+          <caret line="0" column="71" lean-forward="true" selection-start-line="0" selection-start-column="71" selection-end-line="0" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
           <folding />
         </state>
       </provider>
