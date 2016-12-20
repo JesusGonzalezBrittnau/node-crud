@@ -140,6 +140,7 @@ module.exports = {
         // validate information
         req.checkBody('name', 'Name is required.').notEmpty();
         req.checkBody('description', 'Description is required.').notEmpty();
+        req.checkBody('bestPlayer', 'Best player is required.').notEmpty();
 
         // if there are errors redirect the errors to flash
         const errors = req.validationErrors();
