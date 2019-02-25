@@ -35,6 +35,10 @@ app.use(express.static(__dirname+'/public'));
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 
+
+// This use is because of warning: "DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is ..."
+// this is not part of the course on scotch.io
+mongoose.Promise = global.Promise;
 // connect to our DB
 mongoose.connect(dbHost);
 
@@ -48,6 +52,6 @@ app.use(require('./app/routes'));
 //noinspection BadExpressionStatementJS
 // start our server =====================
 app.listen(port, () => {
-    console.log(`Server started on ${dbHost}:${port}`)
+    console.log(`Server started on Database=${dbHost} on localhost:${port}`)
 });
 

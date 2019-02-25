@@ -9,7 +9,8 @@ const eventSchema = new Schema ({
         type: String,
         unique: true
     },
-    description: String
+    description: String,
+    bestPlayer: String
 });
 
 // middleware-----

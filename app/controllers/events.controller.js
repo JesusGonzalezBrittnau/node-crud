@@ -55,27 +55,26 @@ module.exports = {
     function seedEvents (req, res) {
         // create some events
         const events = [
-            {name: 'Basketball', description: 'Throwing into a basket.'},
-            {name: 'Swimming', description: 'Michael Phelps ist the fastest fish!'},
-            {name: 'Weightlifting', description: 'Lifting heavy things up.'},
-            {name: 'Ping Pong', description: 'Super fast paddles.'},
-            {name: 'Soccer', description: 'A game with eleven players on the field.'},
-            {name: 'Icehockey', description: 'Canadians an unbeatable on the ice'},
-            {name: 'Mountainbike', description: 'Very heavy run on a bicycle'}
+            {name: 'Basketball', description: 'Throwing into a basket.', bestPlayer: 'Michalel (Air) Jordan'},
+            {name: 'Swimming', description: 'Michael Phelps ist the fastest fish!', bestPlayer: 'Michalel Phelps'},
+            {name: 'Weightlifting', description: 'Lifting heavy things up.', bestPlayer: 'Antonio Krastew'},
+            {name: 'Ping Pong', description: 'Super fast paddles.', bestPlayer: 'Ma Long'},
+            {name: 'Soccer', description: 'A game with eleven players on the field.', bestPlayer: 'Lionel Messi'},
+            {name: 'Icehockey', description: 'Canadians an unbeatable on the ice', bestPlayer: 'Alexander Ovechkin'},
+            {name: 'Snowboard', description: 'Cool sport for cool people', bestPlayer: 'Travis Rice'},
+            {name: 'Mountainbike', description: 'Very heavy run on a bicycle', bestPlayer: 'Nino Schurter'}
         ];
         // use the Event model to insert /save
-        Event.remove({}, () => {;
+        Event.remove({}, function () {;
             for (event of events) {
                 var newEvent = new Event(event);
                 newEvent.save();
             }
         });
-        // seeded
-        res.render('pages/events', {
-            events: events,
-            success: req.flash('success')
-        });
-    }
+    // set a successful flash message
+    req.flash('success', 'Database successfully restored!');
+    res.redirect('/events');
+}
 
 /**
  * Show the create form
@@ -92,6 +91,7 @@ module.exports = {
         // validate information
         req.checkBody('name', 'Name is required.').notEmpty();
         req.checkBody('description', 'Description is required.').notEmpty();
+        req.checkBody('bestPlayer', 'Best player is required.').notEmpty();
 
         // if there are errors redirect the errors to flash
         const errors = req.validationErrors();
@@ -103,7 +103,8 @@ module.exports = {
         // create a new event
         const event = new Event({
             name: req.body.name,
-            description: req.body.description
+            description: req.body.description,
+            bestPlayer: req.body.bestPlayer
         });
 
         // save event
@@ -139,6 +140,7 @@ module.exports = {
         // validate information
         req.checkBody('name', 'Name is required.').notEmpty();
         req.checkBody('description', 'Description is required.').notEmpty();
+        req.checkBody('bestPlayer', 'Best player is required.').notEmpty();
 
         // if there are errors redirect the errors to flash
         const errors = req.validationErrors();
@@ -146,12 +148,13 @@ module.exports = {
             req.flash('errors', errors.map(err => err.msg));
             return res.redirect(`/events/${req.params.slug}/edit`);
         }
-        // finding the curren event
+        // finding the current event
         Event.findOne({ slug: req.params.slug }, (err, event) => {
 
             // updating that event
             event.name = req.body.name;
             event.description = req.body.description;
+            event.bestPlayer = req.body.bestPlayer;
             event.save((err) => {
                 if (err) throw err;
             // success flash message
